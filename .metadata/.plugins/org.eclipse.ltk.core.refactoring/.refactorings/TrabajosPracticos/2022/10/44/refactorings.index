@@ -1,0 +1,14 @@
+1666626709734	Extract method 'arriesgarLetra'
+1666626751735	Extract method 'arriesgarPalabra'
+1666626817584	Extract method 'contadorDeFallosFinal'
+1666626868142	Extract method 'bienvenidoAlAhorcado'
+1666716176727	Extract method 'arriesgarLetra'
+1666716202153	Extract method 'arriesgarPalabra'
+1666716225989	Extract method 'cantidadDeFallos'
+1666716241030	Extract method 'puntajeFinal'
+1666734260086	Delete element
+1666814128712	Extract method 'ingresarVehiculos'
+1666814875875	Extract method 'venderAuto'
+1666819951784	Extract method 'ordenarPorMarca'
+1666980519670	Delete element
+1666982548852	Extract method 'agregarAListadoDeAutos'

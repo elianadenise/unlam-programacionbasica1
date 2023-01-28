@@ -1,0 +1,26 @@
+1667837746063	Rename package 'Clases'
+1668014389236	Delete element
+1668018497085	Extract method 'agregarAIngredientesDisponibles'
+1668020049724	Extract method 'agregarAEnsaladasPreEstablecidas'
+1668020132779	Extract method 'incorporarIngredienteAEnsaladaPreEstablecida'
+1668020231433	Extract method 'mostrarIngrediestesDisponibles'
+1668021655996	Extract method 'ingrediestesDIsponibles'
+1668023386780	Extract method 'agregarIngredienteDisponible'
+1668024920724	Extract method 'crearNuevaEnsalada'
+1668025029557	Extract method 'crearNuevoPedido'
+1668025046449	Extract method 'mostrarMenu'
+1668025392628	Rename package 'finales'
+1668025407668	Rename package 'finales'
+1668032531391	Extract method 'incorporarNuevoIngrediente'
+1668032647406	Extract method 'crearUnNuevaEnsalada'
+1668033392585	Extract method 'agregarAPedidos'
+1668090092251	Rename package 'Veterinaria'
+1668105955062	Move compilation unit
+1668259677896	Rename package 'subcidio'
+1668259691131	Rename package 'subcidio'
+1668264222938	Delete element
+1668264239666	Delete element
+1668264525606	Move compilation unit
+1668349607035	Rename package 'InterfazSistema'
+1668361296485	Move compilation unit
+1668361302237	Move compilation unit

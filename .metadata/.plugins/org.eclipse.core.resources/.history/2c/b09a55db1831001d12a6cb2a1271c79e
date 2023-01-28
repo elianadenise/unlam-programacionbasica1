@@ -1,0 +1,83 @@
+package trabajoPractico02;
+
+import java.util.Scanner;
+
+//Estudiante Eliana Navarro
+//Actividad
+// Entrada radio, proceso calcular el area de un circulo, salida el area del circuilo
+public class AreaCirculo {
+
+	public static void main(String[] args) {
+		
+		/*//ENTRADA
+		double radio;
+		double area;
+		
+		//PROCESO
+		radio = 10.5D;
+		area = (double) (radio*radio*Math.PI);
+
+		//SALIDA
+		System.out.println("El area del ciculo es " + area + " cm3.");
+		System.out.println(Math.PI);
+		
+		
+		
+		//final double area = 0.0D; final significa que no cambia, es constante.*/
+		
+		
+		//double radio = 15.0D;
+		
+		double radio = 0.0;
+		double resultado = 0.0; //SIEMPRE INICIALIZAR
+		String mensaje = "Ingrese el radio de la circunferencia";
+		
+		
+		
+		Scanner entrada;//Tipo de dato objeto --> Scanner
+		
+		entrada = new Scanner(System.in); //invocamos al constructor de la clase
+		
+		System.out.println(mensaje);
+		
+		radio = entrada.nextDouble();
+		
+		calcularArea(radio); //invocacion o llamada al metodo
+		
+		calcularPerimetro(radio);
+		
+		//CUANDO TENEMOS RETURN, NO ES VOID
+		resultado = calcularOtroArea(radio); 
+		//como este tiene return, hay que asignarlo a una variable 
+		//para que se vea.
+		
+		System.out.println("El area con return es: " + resultado);
+	}
+
+	//Declaracion o definicion del metodo
+	public static void calcularArea(double radio) {
+		double area = 0.0D;
+		
+		area = Math.PI * Math.pow(radio, 2);
+		//area = Math.PI * radio * radio;
+		
+		System.out.println("El area es: " + area + "cm3.");
+	}
+	
+	public static void calcularPerimetro(double radio) {
+		double perimetro = 0.0D;
+		
+		perimetro = 2 * Math.PI * radio;
+		
+		System.out.println("El perimetro es: " + perimetro + "cm.");
+	}
+	
+	public static double calcularOtroArea(double radio) {
+		double area = 0.0D;
+		
+		area = Math.PI * Math.pow(radio, 2);
+		
+		return area; //cuando no es void TIENE QUE HABER RETURN
+	}
+	
+}

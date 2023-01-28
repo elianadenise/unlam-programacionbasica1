@@ -1,0 +1,21 @@
+public class Promedio{
+	public static void main(String args[]){
+		//Declaracion
+		int notaUno;
+		int notaDos;
+		int notaTres;
+		double resultado = 0.0;
+		
+		//Entrada
+		notaUno = 7;
+		notaDos = 9;
+		notaTres = 4;
+		
+		//Proceso
+		resultado = (notaUno + notaDos + notaTres) / 3;
+		
+		//Salida
+		System.out.println("El promedio del estudiante es: " + resultado);
+	}
+	
+}

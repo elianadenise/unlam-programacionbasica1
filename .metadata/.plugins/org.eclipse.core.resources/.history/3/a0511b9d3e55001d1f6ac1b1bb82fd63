@@ -1,0 +1,53 @@
+package trabajoPractico09;
+
+public class Concesionaria {
+
+	//ATRIBUTOS
+	private String marcas[] = {"Chevrolet", "Fiat", "Ford", "BMW", "Renault"};
+	private String modelos[] = {"Onix", "500", "autitoFord", "autitoBMW", "autitoRenault"};
+	private int precio[] = {300000, 50000, 400000, 40000, 900000};
+	private String vendedor;
+	private String autoConsultado;
+	private byte autosVendidos;
+	
+	//CONSTRUCTOR
+	public Concesionaria(String vendedor, byte codigo) {
+		this.vendedor = vendedor;
+		this.autoConsultado = seleccionarAuto(codigo);
+		this.autosVendidos = 0;
+		
+	}
+	
+	public Concesionaria(String vendedor) {//en caso de que quiera ver otra cosa
+		this.vendedor = vendedor;
+	}
+	
+	//GETS&SETS
+	public String getVendedor() {
+		return vendedor;
+	}
+
+	public String getAutoConsultado() {
+		return autoConsultado;
+	}
+	
+	//METODOS
+	public String seleccionarAuto(byte codigo) {
+		return "Marca: " + marcas[codigo] +";\n Modelo: " + modelos[codigo] + "; \nPrecio: " + precio[codigo];
+	}
+
+	public String mostrarVehiculosDisponibles() {//mostrar esto al profe
+		for(int i = 0; i < marcas.length; i++) {
+			for(int j = 0; j < modelos.length; j++) {
+				autoConsultado = (i+1) + " " + marcas[i] + " " + modelos[j];
+			}
+		}
+		return autoConsultado;
+	}
+	
+	public void venderAuto() {
+		
+	}
+	
+	
+}

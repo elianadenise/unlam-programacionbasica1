@@ -1,0 +1,260 @@
+package trabajoPracticoIntegrador;
+
+//Estudiantes:
+//- Alonso Reyes, Ornella
+//- Fazzari Clerici, Mayra
+//- Ferreira, Tahiel
+//- Navarro, Eliana
+
+import java.util.Scanner;
+
+public class InterfazTelevisor {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner (System.in);
+
+		System.out.println("*La familia compra su primer televisor*");
+		Televisor primerTelevisor = new Televisor();
+		primerTelevisor.encenderOApagar();
+		System.out.println("El televisor esta encendido? " + primerTelevisor.isBotonPower());
+		
+		seleccionarEntrada(teclado, primerTelevisor);
+		
+		cambiarDeCanal(teclado, primerTelevisor);
+		
+		//Profesores: se menciona el metodo varias veces para probar distintas entradas
+		subirOBajarAnalogicamente(teclado, primerTelevisor);
+		subirOBajarAnalogicamente(teclado, primerTelevisor);
+		subirOBajarAnalogicamente(teclado, primerTelevisor);
+		subirOBajarAnalogicamente(teclado, primerTelevisor);
+		
+		volverAlCanalAnterior(primerTelevisor);
+		volverAlCanalAnterior(primerTelevisor);
+		
+		silenciar(primerTelevisor);
+		
+		System.out.println("El numero de serie del televisor es: " + Televisor.getNumeroDeSerie());
+		
+		System.out.println("La familia apaga el televisor");
+		primerTelevisor.encenderOApagar();
+		System.out.println("El televisor se encuentra prendido? " + primerTelevisor.isBotonPower());
+		
+		System.out.println("----------------------------------------------------");
+		System.out.println("*La familia compra un segundo televisor*");
+		
+		Televisor segundoTelevisor = new Televisor();
+		segundoTelevisor.encenderOApagar();
+		System.out.println("El televisor esta encendido? " + segundoTelevisor.isBotonPower());
+		
+		seleccionarEntrada(teclado, segundoTelevisor);
+		
+		cambiarDeCanal(teclado, segundoTelevisor);
+		
+		//Profesores: se menciona el metodo varias veces para probar distintas entradas
+		subirOBajarAnalogicamente(teclado, segundoTelevisor);
+		subirOBajarAnalogicamente(teclado, segundoTelevisor);
+		subirOBajarAnalogicamente(teclado, segundoTelevisor);
+		subirOBajarAnalogicamente(teclado, segundoTelevisor);
+		
+		volverAlCanalAnterior(segundoTelevisor);
+		
+		silenciar(segundoTelevisor);
+		
+		System.out.println("El numero de serie del televisor es: " + Televisor.getNumeroDeSerie());
+		
+		System.out.println("La familia apaga el televisor");
+		segundoTelevisor.encenderOApagar();
+		System.out.println("El televisor se encuentra prendido? " + segundoTelevisor.isBotonPower());
+		
+		System.out.println("----------------------------------------------------");
+		System.out.println("*La familia compra un tercer televisor*");
+	
+		Televisor tercerTelevisor = new Televisor((byte) 127, (short) 32767);
+		
+		tercerTelevisor.encenderOApagar();
+		System.out.println("El televisor esta encendido? " + tercerTelevisor.isBotonPower());
+		
+		seleccionarEntrada(teclado, tercerTelevisor);
+		
+		cambiarDeCanal(teclado, tercerTelevisor);
+		
+		//Profesores: se menciona el metodo varias veces para probar distintas entradas
+		subirOBajarAnalogicamente(teclado, tercerTelevisor);
+		subirOBajarAnalogicamente(teclado, tercerTelevisor);
+		subirOBajarAnalogicamente(teclado, tercerTelevisor);
+		subirOBajarAnalogicamente(teclado, tercerTelevisor);
+		
+		volverAlCanalAnterior(tercerTelevisor);
+		
+		silenciar(tercerTelevisor);
+		
+		System.out.println("El numero de serie del televisor es: " + Televisor.getNumeroDeSerie());
+		
+		System.out.println("La familia apaga el televisor");
+		tercerTelevisor.encenderOApagar();
+		System.out.println("El televisor se encuentra prendido? " + tercerTelevisor.isBotonPower());
+		
+		}
+
+	public static void seleccionarEntrada(Scanner teclado, Televisor nuevo) {
+		System.out.println("La television esta prendida, elija un tipo de entrada \nA: Canal abierto \nC: Canal por cable \nU: USB \n1: HDMI1 \n2: HDMI2");
+		char seleccionEntrada = teclado.next().charAt(0);
+		nuevo.seleccionarEntrada(seleccionEntrada);
+	
+		if((seleccionEntrada == 'A') || (seleccionEntrada == 'a') || (seleccionEntrada == 'C') || (seleccionEntrada == 'c') || (seleccionEntrada == 'U') || (seleccionEntrada == 'u')|| (seleccionEntrada == '1') || (seleccionEntrada == '2')) {
+		nuevo.seleccionarEntrada(seleccionEntrada);
+		} else {
+			System.out.println("Error, elija una opcion valida");
+		}
+	
+		switch(seleccionEntrada) {
+		case 'a':
+		case 'A':
+			System.out.println("Selecciono la opcion: " + nuevo.getEntradaActual());
+			System.out.println("Se ha seleccionado la entrada de television de aire");
+			break;
+		case 'c':
+		case 'C':
+			System.out.println("Selecciono la opcion: " + nuevo.getEntradaActual());
+			System.out.println("Se ha seleccionado la entrada de television de cable");
+			break;
+		case '1':
+			System.out.println("Selecciono la opcion: " + nuevo.getEntradaActual());
+			System.out.println("Se ha seleccionado la entrada HDMI1");
+			break;
+		case '2':			
+			System.out.println("Selecciono la opcion: " + nuevo.getEntradaActual());
+			System.out.println("Se ha seleccionado la entrada HDMI2");
+			break;
+		case 'u':
+		case 'U':
+			System.out.println("Selecciono la opcion: " + nuevo.getEntradaActual());
+			System.out.println("Se ha seleccionado la entrada USB");
+			break;
+		}
+		
+	}
+
+	public static void cambiarDeCanal(Scanner teclado, Televisor nuevo) {
+		if((nuevo.getEntradaActual() == 'A') || (nuevo.getEntradaActual() == 'C')) {
+			System.out.println("Cuantos digitos tiene el canal deseado? \n1: Un digito \n2: Dos digitos \n3: Tres digitos \n4: Cuatro digitos \n5: Cinco digitos");
+			char eleccionDigitos = teclado.next().charAt(0); 
+			switch (eleccionDigitos) {
+			case '1':
+				System.out.println("Escriba el digito");
+				byte digitoUnoCasoUno = teclado.nextByte();
+				nuevo.cambiarDeCanal(digitoUnoCasoUno);
+				break;
+			case '2':
+				System.out.println("Escriba el primer digito");
+				byte digitoUnoCasoDos = teclado.nextByte();
+				System.out.println("Escriba el segundo digito");
+				byte digitoDosCasoDos = teclado.nextByte();
+				nuevo.cambiarDeCanal(digitoUnoCasoDos, digitoDosCasoDos);
+				break;
+			case '3':
+					System.out.println("Escriba el primer digito");
+					byte digitoUnoCasoTres = teclado.nextByte();
+					System.out.println("Escriba el segundo digito");
+					byte digitoDosCasoTres = teclado.nextByte();
+					System.out.println("Escriba el tercer digito");
+					byte digitoTresCasoTres = teclado.nextByte();
+					nuevo.cambiarDeCanal(digitoUnoCasoTres, digitoDosCasoTres, digitoTresCasoTres);
+					break;
+			case '4':
+				if(nuevo.getEntradaActual() == 'C'){
+					System.out.println("Escriba el primer digito");
+					byte digitoUnoCasoCuatro = teclado.nextByte();
+					System.out.println("Escriba el segundo digito");
+					byte digitoDosCasoCuatro = teclado.nextByte();
+					System.out.println("Escriba el tercer digito");
+					byte digitoTresCasoCuatro = teclado.nextByte();
+					System.out.println("Escriba el cuarto digito");
+					byte digitoCuatroCasoCuatro = teclado.nextByte();
+					nuevo.cambiarDeCanal(digitoUnoCasoCuatro, digitoDosCasoCuatro, digitoTresCasoCuatro, digitoCuatroCasoCuatro );
+				} else {
+					System.out.println("No existe canal abierto para esta opcion.");
+				}
+				break;
+			case '5':
+				if(nuevo.getEntradaActual() == 'C') {
+					System.out.println("Escriba el primer digito");
+					byte digitoUnoCasoCinco = teclado.nextByte();
+					System.out.println("Escriba el segundo digito");
+					byte digitoDosCasoCinco = teclado.nextByte();
+					System.out.println("Escriba el tercer digito");
+					byte digitoTresCasoCinco = teclado.nextByte();
+					System.out.println("Escriba el cuarto digito");
+					byte digitoCuatroCasoCinco = teclado.nextByte();
+					System.out.println("Escriba el quinto digito");
+					byte digitoCincoCasoCinco = teclado.nextByte();
+					nuevo.cambiarDeCanal(digitoUnoCasoCinco, digitoDosCasoCinco, digitoTresCasoCinco, digitoCuatroCasoCinco, digitoCincoCasoCinco);
+				} else {
+					System.out.println("No existe canal abierto para esta opcion.");
+				}
+				break;
+				}
+			System.out.println(nuevo);
+		} else { 
+			System.out.println("La entrada seleccionada es: " + nuevo.getEntradaActual() + ". Por ende, no puede realizarse la operacion de cambiar de canal.");
+		}
+	}
+	
+	public static void subirOBajarAnalogicamente(Scanner teclado, Televisor nuevo) {
+		if((nuevo.getEntradaActual() == 'A') || (nuevo.getEntradaActual() == 'C')) {
+			System.out.println("Que desea realizar ahora:\n+: Subir volumen \n-: Bajar volumen \n>: Subir canal \n<: Bajar canal");
+			char subirObajar = teclado.next().charAt(0);
+			nuevo.subirObajarAnalogicamente(subirObajar);
+			switch(subirObajar) {
+			case '+':
+			case '-':
+				if(nuevo.getVolumenActual() > 0 && nuevo.getCanalAbiertoActual() < nuevo.getVOLUMEN_MAX()) {
+					System.out.println("El volumen del televisor es: " + nuevo.getVolumenActual());
+				} else {
+					System.out.println("El volumen del televisor es: " + nuevo.getVolumenActual());
+				}
+				break;
+			case '<':
+			case '>':
+				if((nuevo.getEntradaActual() == 'A')){
+					System.out.println("El canal actual del televisor es: " + nuevo.getCanalAbiertoActual());
+				} else if((nuevo.getEntradaActual() == 'C')) {
+					System.out.println("El canal actual del televisor es: " + nuevo.getCanalCableActual());
+				}
+				break;
+			default:
+				System.out.println("Elija un caracter valido");
+				break;
+			}
+		} else if ((nuevo.getEntradaActual() == 'U') || (nuevo.getEntradaActual() == '1') || (nuevo.getEntradaActual() == '2')){
+			System.out.println("Que desea realizar ahora:\n+: Subir volumen \n-: Bajar volumen");
+			char subirObajar = teclado.next().charAt(0);
+			nuevo.subirObajarAnalogicamente(subirObajar);
+			switch(subirObajar) {
+			case '+':
+			case '-':
+				if(nuevo.getVolumenActual() > 0 && nuevo.getCanalAbiertoActual() < nuevo.getVOLUMEN_MAX()) {
+					System.out.println("El volumen del televisor es: " + nuevo.getVolumenActual());
+				} else {
+					System.out.println("El volumen del televisor es: " + nuevo.getVolumenActual());
+				}
+				break;
+			default:
+				System.out.println("Elija un caracter valido");
+				break;
+			}
+		}
+	}
+	
+	public static void volverAlCanalAnterior(Televisor nuevo) {
+		System.out.println("El usuario desea ir al canal anterior");
+		nuevo.volverAlCanalAnterior();
+		System.out.println(nuevo);
+	}
+
+	public static void silenciar(Televisor nuevo) {
+		System.out.println("El usuario desea mutear el televisor");
+		nuevo.silenciar();
+		System.out.println(nuevo);
+	}
+}

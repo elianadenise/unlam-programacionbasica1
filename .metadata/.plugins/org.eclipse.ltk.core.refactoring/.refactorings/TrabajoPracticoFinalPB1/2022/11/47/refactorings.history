@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public static void extracted(Scanner entrada, Preguntados jugadorUno)&apos; from &apos;preguntados.InterfazPreguntados.main(...)&apos; to &apos;preguntados.InterfazPreguntados&apos;&#x0D;&#x0A;- Original project: &apos;TrabajoPracticoFinalPB1&apos;&#x0D;&#x0A;- Method name: &apos;extracted&apos;&#x0D;&#x0A;- Destination type: &apos;preguntados.InterfazPreguntados&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;extracted&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/interfaz&lt;preguntados{InterfazPreguntados.java" name="extracted" replace="false" selection="679 3717" stamp="1668892159750" version="1.0" visibility="1"/>
+</session>

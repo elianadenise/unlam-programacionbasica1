@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\usuario\Downloads\NavarroEliana41334491"/>
+			<item value="C:\Users\usuario\Downloads\TpIntegradorPreguntados"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\partidodefuttbol"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\Reproductor (1)\PBIEVA03ApellidoNombreDNI\PBIEVA03ApellidoNombreDNI"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\Reproductor (1)\PBIEVA03ApellidoNombreDNI"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\Reproductor (1)"/>
+			<item value="C:\Users\usuario\Downloads\Reproductor\PBIEVA03ApellidoNombreDNI"/>
+			<item value="C:\Users\usuario\Downloads\Reproductor"/>
+			<item value="C:\Users\usuario\Downloads\0 DW\lalal"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\PB1SegundoParcial2C2022ApellidosNombres"/>
+			<item value="C:\Users\usuario\Downloads\lalal (1)\Examenes2022 - luxo"/>
+			<item value="C:\Users\usuario\Downloads\lalal\Examenes2022"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\lalal"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\PB120221QParcial2Resuelto"/>
+			<item value="C:\Users\usuario\Downloads\PB-I---2022---Final-Octubre (1)"/>
+			<item value="C:\Users\usuario\Downloads\0 TEC WEB\PROGRAMACION BASICA\2022---Primer-Cuatrimestre---Turno-Noche---Segundo-Parcial\PBI - 2021 - Segundo Parcial\PBI2021Q1Parcial2ApellidoNombre"/>
+			<item value="C:\Users\usuario\Downloads\TrabajoPracticoIntegrador_1"/>
+		</list>
+	</section>
+</section>

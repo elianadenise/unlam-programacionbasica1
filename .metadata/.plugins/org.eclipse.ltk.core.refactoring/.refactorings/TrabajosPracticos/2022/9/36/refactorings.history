@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public static void informacionDelEstudiante(Alumno estudianteUno)&apos; from &apos;trabajoPractico02.ProgramacionBasica1.main(...)&apos; to &apos;trabajoPractico02.ProgramacionBasica1&apos;&#x0D;&#x0A;- Original project: &apos;TrabajosPracticos&apos;&#x0D;&#x0A;- Method name: &apos;informacionDelEstudiante&apos;&#x0D;&#x0A;- Destination type: &apos;trabajoPractico02.ProgramacionBasica1&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;informacionDelEstudiante&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;trabajoPractico02{ProgramacionBasica1.java" name="informacionDelEstudiante" replace="false" selection="593 189" stamp="1662080572821" version="1.0" visibility="1"/>
+</session>

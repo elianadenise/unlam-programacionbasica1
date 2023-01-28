@@ -1,0 +1,8 @@
+1667571584590	Extract method 'incorporarNuevoIngrediente'
+1667685226063	Rename local variable 'teclado'
+1667686359654	Extract method 'buscarPorId'
+1667687012261	Extract method 'listadoPorEspecie'
+1667687225854	Extract method 'eliminarPorId'
+1667687399914	Extract method 'atencionesRealizadasyDisponibilidad'
+1667687779979	Extract method 'montoTotal'
+1667688418426	Extract method 'ordenarMontos'
